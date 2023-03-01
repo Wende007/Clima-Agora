@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Signika Negative';
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url("https://images3.alphacoders.com/892/thumb-1920-89289.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    background: linear-gradient(to bottom, #ff5f6d, #ffc371);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    width: 280px;
+    margin: 0 auto;
+    padding: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+}
+
+.container div{
+    padding: 10px;
+}
+
+.sugestoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+    color: #fff;
+    margin-top: 10px;
+    border-top: 2px solid #fff;
+}
+
+.sugestoes div {
+    background: linear-gradient(to bottom, #eb3349, #f45c43);
+    border-radius: 2rem;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.form h2{
+    font-size: 12pt;
+    color: rgb(255, 255, 255);
+}
+
+.temperatura h1{
+    font-size: 40pt;
+    color: rgb(255, 255, 255);
+}
+
+.city-name, .umidade-e-vento, .ceu{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.city-name{
+    align-items: center;
+}
+
+.umidade-e-vento i,h4{
+    padding: 0.3rem;
+}
+
+.fundo-barra{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    height: 35px;
+    margin-top: 15px;
+}
+
+.fundo-barra input, button{
+    background-color: transparent;
+    border: 0;
+    height: 30px;
+}
+
+.fundo-barra input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px rgb(255, 255, 255) inset;
+    border-radius: 50%;
+}
+
+.fundo-barra button {
+    width: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.fundo-barra input {
+    width: 100%;
+    padding-left: 10px;
+    outline: 0;
+}
+
+.ceu{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.ceu img{
+    transform: scale(0.8);
+}
+
+.city-name img{
+    height: 30px;
+}
+
+.data{
+    display: none;
+    border-top: 2px solid;
+    border-color: rgb(255, 255, 255);
+}
